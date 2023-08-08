@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.main-header {
+    padding: 15px;
+    background-color: #EAC926;
+}
+
+.barra-de-busqueda{
+    width: 50%;
+    max-width: 200px;
+}
+
+.logo{
+    width: 50%;
+    max-width: 200px;
+}
+
+.copy-header{
+    font-weight: 50;
+    text-align: center;
+    font-size: 100%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+} 
+
+.list-container,
+.login-navbar{
+    display: none;
+    padding: 5px;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars{
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+main{
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+.main-header-top-bar{
+    align-items: center;
+    padding: 10px;
+}
+
+.formulario-conteiner{
+    width: 70%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: auto;
+}
+
+main input{
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.formulario-conteiner label {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.formulario-conteiner button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.formulario-conteiner button:hover {
+    background-color: #0056b3;
+}
+
+
+form {
+    margin: auto;
+}
+  
+
+footer .f1{
+    padding: 15px 70px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    background-color: white;
+    width: 90% ;
+    margin: auto;
+}
+
+footer .fa-solid{
+    font-size: 2em;
+    padding: 5px;
+}
+
+footer h4{
+    font-size: 16px;
+    padding: 5px
+}
+
+.copy{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+}
+
+@media (min-width: 361px){
+ 
+    .list-container,
+    .login-navbar{
+        display: block;
+    }
+
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }   
+    
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .main-header-bottom-bar{
+        display: flex;
+        justify-content: space-between ;
+    }
+
+    .main-header-bottom-bar ul {
+        display: flex;
+    }
+
+    .main-header-bottom-bar li {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 769px){
+    
+    .list-container,
+    .login-navbar{
+        display: block;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .main-header-top-bar,
+    .main-header-bottom-bar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+    }
+
+    .copy-header{
+        max-width: none;
+        margin: 0;
+    }
+}
